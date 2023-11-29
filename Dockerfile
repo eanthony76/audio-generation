@@ -23,5 +23,4 @@ RUN git lfs install \
 WORKDIR VALL-E-X
 EXPOSE 7860
 
-COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+CMD ["python3", "app.py"]
