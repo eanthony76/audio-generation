@@ -18,7 +18,8 @@ RUN git lfs install \
     && git clone https://github.com/eanthony76/voice-cloning.git \
     && cd voice-cloning/xtts \
     && pip install -r requirements.txt \
-    && pip install gradio langid
+    && pip install gradio langid \
+    && python3 -m unidic download
     
 WORKDIR voice-cloning/xtts
 EXPOSE 7860
