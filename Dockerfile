@@ -20,7 +20,7 @@ RUN git lfs install \
     && pip install -r requirements.txt \
     && pip install gradio langid
     
-WORKDIR xtts
+WORKDIR voice-cloning/xtts
 EXPOSE 7860
 
 CMD ["python3", "app.py"]
