@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN git lfs install \
     && git clone https://github.com/eanthony76/voice-cloning.git \
-    && cd xtts \
+    && cd voice-cloning/xtts \
     && pip install -r requirements.txt \
     && pip install gradio langid
     
