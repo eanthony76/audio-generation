@@ -8,8 +8,7 @@ RUN apt-get update && apt-get install -y \
     git \
     curl \
     wget \
-    python3 \
-    python3-venv \
+    python \
     pip \
     cmake \
     git-lfs
@@ -24,4 +23,4 @@ RUN git lfs install \
 WORKDIR voice-cloning/xtts
 EXPOSE 7860
 
-CMD ["python3", "app.py"]
+CMD ["python", "u", "app.py"]
