@@ -11,7 +11,8 @@ RUN apt-get update && apt-get install -y \
     python3 \
     pip \
     cmake \
-    git-lfs
+    git-lfs \
+    ffmpeg
 
 RUN git lfs install \
     && git clone https://github.com/eanthony76/voice-cloning.git \
@@ -23,4 +24,4 @@ RUN git lfs install \
 WORKDIR voice-cloning/xtts
 EXPOSE 7860
 
-CMD ["python", "u", "app.py"]
+CMD ["python3", "u", "app.py"]
