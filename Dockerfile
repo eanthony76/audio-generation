@@ -15,12 +15,12 @@ RUN apt-get update && apt-get install -y \
     git-lfs
 
 RUN git lfs install \
-    && git clone https://github.com/eanthony76/VALL-E-X.git \
-    && cd VALL-E-X \
+    && git clone https://github.com/eanthony76/voice-cloning.git \
+    && cd xtts \
     && pip install -r requirements.txt \
-    && python3 -c "import nltk; nltk.download('punkt')"
-
-WORKDIR VALL-E-X
+    && pip install gradio
+    
+WORKDIR xtts
 EXPOSE 7860
 
 CMD ["python3", "app.py"]
