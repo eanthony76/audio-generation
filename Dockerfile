@@ -18,7 +18,7 @@ RUN git lfs install \
     && git clone https://github.com/eanthony76/voice-cloning.git \
     && cd xtts \
     && pip install -r requirements.txt \
-    && pip install gradio
+    && pip install gradio langid
     
 WORKDIR xtts
 EXPOSE 7860
