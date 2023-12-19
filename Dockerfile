@@ -24,4 +24,4 @@ RUN git lfs install \
 WORKDIR voice-cloning/xtts
 EXPOSE 7860
 
-CMD ["python3", "u", "app.py"]
+CMD ["python3", "-u", "app.py"]
