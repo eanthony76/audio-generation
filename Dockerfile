@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
     pip \
     cmake \
     git-lfs \
-    ffmpeg
+    ffmpeg 
 
 RUN git lfs install \
     && git clone https://github.com/eanthony76/voice-cloning.git \
